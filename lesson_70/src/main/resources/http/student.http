@@ -1,0 +1,47 @@
+### Student list
+GET localhost:8080/student/list
+
+### Student by id
+GET localhost:8080/student/get/6e805fcf-4b62-4117-b08d-213e9cc705c8
+
+
+### Student create
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "name": "Toshmat",
+  "surname": "Toshmatov"
+}
+
+
+### Student create
+POST localhost:8080/student/create/all
+Content-Type: application/json
+
+[
+  {
+    "name": "Name1",
+    "surname": "Toshmatov"
+  },
+  {
+    "name": "Name2",
+    "surname": "Toshmatov"
+  },
+  {
+    "name": "Name3",
+    "surname": "Toshmatov"
+  }
+]
+
+### Student update
+PUT localhost:8080/student/update/53147582-5732-40d8-af7d-cedb75d35f6c
+Content-Type: application/json
+
+{
+  "name": "Qo'y",
+  "surname": "Qo'chqorov"
+}
+
+### Student delete
+DELETE localhost:8080/student/delete/529a9e08-e2c3-4d56-a1d6-c26aa341f805
